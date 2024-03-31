@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* html{
+  color-scheme: light dark;
+} */
