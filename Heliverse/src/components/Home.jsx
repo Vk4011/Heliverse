@@ -17,7 +17,7 @@ function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:3000/users");
+        const response = await fetch("https://heliverse-czlh.onrender.com/users");
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
