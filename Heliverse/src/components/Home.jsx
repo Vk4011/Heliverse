@@ -565,8 +565,10 @@ function Home() {
         </div>
         <br />
         <ReactPaginate
-         previousLabel={<img src={previous} alt="Previous" style={{ width: "26px" }} />}
-         nextLabel={<img src={next} alt="Next" style={{ width: "26px" }} />}
+          previousLabel={
+            <img src={previous} alt="Previous" style={{ width: "26px" }} />
+          }
+          nextLabel={<img src={next} alt="Next" style={{ width: "26px" }} />}
           breakLabel={"..."}
           pageCount={pageCount}
           onPageChange={handlePageChange}
@@ -600,26 +602,24 @@ function Home() {
             bg-gradient-to-b from-blue-300 via-blue-400 to-blue-200 rounded-lg 
             shadow-lg cursor-pointer transform transition-all duration-300 hover:scale-105 mx-auto mb-4"
             >
-              <div className="Userdata flex items-center justify-center flex-col text-white p-4">
-                <img src={user.avatar} alt="" className="w-20 h-20 mb-2" />
-                <li className="text-xs md:text-sm lg:text-sm font-bold mb-1">
+              <div className="Userdata flex items-center justify-center flex-col text-white p-8">
+                <img src={user.avatar} alt="" className="w-16 h-16 mb-2" />
+                <p className="text-xs font-bold mb-1">
                   First Name: {user.first_name}
-                </li>
-                <li className="text-xs md:text-sm lg:text-sm font-bold mb-1">
+                </p>
+                <p className="text-xs font-bold mb-1">
                   Last Name: {user.last_name}
-                </li>
-                <li className="text-xs md:text-sm lg:text-sm font-bold mb-1">
-                  Email: {user.email}
-                </li>
-                <li className="text-xs md:text-sm lg:text-sm font-bold mb-1">
+                </p>
+                <p className="text-xs font-bold mb-1">Email: {user.email}</p>
+                <p className="text-xs font-bold mb-1">
                   Gender: {user.gender}
-                </li>
-                <li className="text-xs md:text-sm lg:text-sm font-bold mb-1">
+                </p>
+                <p className="text-xs font-bold mb-1">
                   Domain: {user.domain}
-                </li>
-                <li className="text-xs md:text-sm lg:text-sm font-bold mb-1">
+                </p>
+                <p className="text-xs font-bold mb-1">
                   Available: {user.available.toString()}
-                </li>
+                </p>
               </div>
             </div>
           ))}
